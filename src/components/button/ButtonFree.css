@@ -1,0 +1,67 @@
+.on-hoverFree{
+    background-color: #A2275C;
+    color: #fff;
+    padding: 17px 26px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    font-size: 18px;
+    box-shadow: 4px 0px 0px 0px #802049, -4px 0px 0px 0px #E43A84, 0px  4px 0px 0px #802049, 0px -4px 0px 0px #E43A84;
+    margin: 0px;
+    text-align: center;
+    }
+    .on-hoverFree:hover{
+        background-color: #8227A2;
+        box-shadow: 4px 0px 0px 0px #5B2080, -4px 0px 0px 0px #C23AE4, 0px  4px 0px 0px #5B2080, 0px -4px 0px 0px #C23AE4;
+    }
+    .on-hoverFree:focus{
+        background-color: #8227A2;
+        box-shadow: 4px 0px 0px 0px #C23AE4, -4px 0px 0px 0px #5B2080, 0px  4px 0px 0px #C23AE4, 0px -4px 0px 0px #5B2080;
+    }
+    @media screen and (min-width: 765px){
+        .on-hoverFree{
+            margin-right: 15px;
+        }
+    }
+    @media screen and (max-width: 974px){    
+        .on-hoverFree{
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: 605px){
+        .on-hoverFree{
+            font-size: 8px;
+        }
+    }
+    .hidden-blockFree{
+        /*background:#fff ;*/
+        background-image: url('../../image/icon/alert.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size:25px;
+        padding:20px;
+        text-align:center;
+        opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+        transition: 0.3s; /*Скорость перехода состояния элемента*/
+        
+        font-size: 12px;
+       /* box-shadow: 4px 0px 0px 0px #000, -4px 0px 0px 0px #000, 0px  4px 0px 0px #000, 0px -4px 0px 0px #000;*/
+        margin-top: -110px;
+        
+        margin-left: -250px;
+        }
+    .on-hoverFree:hover+ .hidden-blockFree{
+        opacity:1;
+        transition: 0.3s;
+
+        }
+        .text-hidden-blockFree{
+            font-family: 'Press Start 2P', cursive;
+            text-transform: uppercase;
+            color: #000;
+        }
+    @media screen and (max-width: 1128px){
+        .hidden-blockFree{
+            display: none;
+        }
+    }
